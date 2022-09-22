@@ -19,6 +19,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### How to start contributing
 
+First of all, star this repo 😎, then...
 All you need to do is fork the repository and install locally. And then do this:
 
 ```
