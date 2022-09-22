@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "a fully typesafe and DX friendly react paystack package",
   "private": false,
+  "keywords": ["typescript", "paystack", "react"],
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
