@@ -5,3 +5,4 @@ export default function usePaystack(key: PaystackKey): {
     setCallbackMethods: import("react").Dispatch<import("react").SetStateAction<TransactionOperations | undefined>>;
     popUp: () => void;
 };
+export { PaystackTransaction } from "./types";
