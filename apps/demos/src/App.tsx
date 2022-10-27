@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {usePaystack} from "@wjbright/paystack"
+import {} from "@wjbright/paystack"
 
 function App() {
   console.log(process.env.REACT_APP_PAYSTACK_PUBLIC_KEY)
@@ -12,9 +13,13 @@ function App() {
       email: 'brightasima@gmail.com',
       amount: 50
     });
+    
+    const onSuccess = (transaction: any) => {
+      console.log('We did it!', transaction)
+    }
 
     setCallbackMethods({
-      onSuccess: (transaction) => console.log('Successful! We did it', transaction),
+      onSuccess,
       onCancel: () => console.log('You stopped the party')
     })
   }, [])
